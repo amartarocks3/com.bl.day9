@@ -7,7 +7,7 @@ public class Employeecal {
 	public static final int NUM_OF_WORKING_DAYS=20;
 	public static final int MAX_HRS_IN_MONTH=100;
 	
-	public static void main(String[] args) {
+	public static int computeEmpWage() {
 		int empHrs = 0;
 		int empWage = 0;
 		int totalEmpWage = 0;
@@ -33,5 +33,9 @@ public class Employeecal {
 		}
 		
 		System.out.println(totalEmpWage);
+		return totalEmpWage;
+	}
+	public static void main(String[] args) {
+		computeEmpWage();
 	}
 }
